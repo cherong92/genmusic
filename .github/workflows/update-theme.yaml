@@ -33,5 +33,5 @@ jobs:
       - name: Copy Theme Files to WordPress PVC
         run: |
           kubectl cp themes/futurio-storefront $POD_NAME:/bitnami/wordpress/wp-content/themes/futurio-storefront -n wordpress
-          kubectl exec -n wordpress $POD_NAME -- chown -R 1001:1001 /bitnami/wordpress/wp-content/themes/futurio-storefront
+          kubectl exec -n wordpress $POD_NAME -- chown -R www-data:www-data /bitnami/wordpress/wp-content/themes/futurio-storefront
           kubectl exec -n wordpress $POD_NAME -- chmod -R 775 /bitnami/wordpress/wp-content/themes/futurio-storefront
