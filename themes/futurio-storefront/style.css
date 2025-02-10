@@ -894,7 +894,7 @@ nav.navigation.pagination .nav-links a, nav.navigation.pagination .current {
 }
 
 #content-footer-section {
-    background-color: #9f3f3f;
+    background-color: #1d4fcc;
     color: #ffffff;
     padding: 15px;
     clear: both;
@@ -904,18 +904,18 @@ nav.navigation.pagination .nav-links a, nav.navigation.pagination .current {
     font-weight: 300;
 }
 #content-footer-section .widget-title h3 {
-    background-color: #9f3f3f;
+    background-color: #1d4fcc;
     color: #fff;
 }
 
 .footer-credits {
-    background-color: #9f3f3f;
+    background-color: #1d4fcc;
     clear: both;
 }
 .footer-credits-text {
     padding: 20px 0;
     color: #fff;
-    background-color: #9f3f3f;
+    background-color: #1d4fcc;
 }
 .site-header {
     padding: 15px 0;
