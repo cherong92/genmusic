@@ -1,0 +1,36 @@
+name: Update WordPress Theme in PVC
+
+on:
+  push:
+    branches:
+      - main
+    workflow_dispatch:
+    paths:
+      - 'themes/futurio-storefront/style.css'
+
+jobs:
+  sync-theme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Login to Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Set up Kubernetes context
+        run: |
+          az aks get-credentials --resource-group Genmusic --name genmusicAKS
+
+      - name: Get WordPress Pod Name
+        run: |
+          POD_NAME=$(kubectl get pods --namespace wordpress -l app.kubernetes.io/instance=wordpress -o jsonpath="{.items[0].metadata.name}")
+          echo "POD_NAME=$POD_NAME" >> $GITHUB_ENV
+
+      - name: Copy Theme Files to WordPress PVC
+        run: |
+          kubectl cp themes/futurio-storefront $POD_NAME:/bitnami/wordpress/wp-content/themes/futurio-storefront -n wordpress
+# kubectl exec $POD_NAME -n wordpress -- chown -R www-data:www-data /bitnami/wordpress/wp-content/themes/futurio-storefront
