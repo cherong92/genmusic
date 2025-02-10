@@ -894,7 +894,7 @@ nav.navigation.pagination .nav-links a, nav.navigation.pagination .current {
 }
 
 #content-footer-section {
-    background-color: #a8096b;
+    background-color: #1e1e1e;
     color: #ffffff;
     padding: 15px;
     clear: both;
@@ -904,18 +904,18 @@ nav.navigation.pagination .nav-links a, nav.navigation.pagination .current {
     font-weight: 300;
 }
 #content-footer-section .widget-title h3 {
-    background-color: #a8096b;
+    background-color: #1e1e1e;
     color: #fff;
 }
 
 .footer-credits {
-    background-color: #a8096b;
+    background-color: #1e1e1e;
     clear: both;
 }
 .footer-credits-text {
     padding: 20px 0;
     color: #fff;
-    background-color: #a8096b;
+    background-color: #1e1e1e;
 }
 .site-header {
     padding: 15px 0;
@@ -980,7 +980,7 @@ nav.navigation.pagination .nav-links a, nav.navigation.pagination .current {
 }
 
 .top-search-box input.search-field {
-    border: 1px solid #434343;
+    border: 10px solid #434343;
     padding-right: 30px;
     height: 50px;
 }
