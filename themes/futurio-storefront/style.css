@@ -894,28 +894,28 @@ nav.navigation.pagination .nav-links a, nav.navigation.pagination .current {
 }
 
 #content-footer-section {
-    background-color: #2bc958;
+    background-color: #01bb36;
     color: #ffffff;
     padding: 15px;
     clear: both;
 }
 #content-footer-section .news-item h2 a {
-    color: #2bc958;
+    color: #01bb36;
     font-weight: 300;
 }
 #content-footer-section .widget-title h3 {
-    background-color: #2bc958;
+    background-color: #01bb36;
     color: #fff;
 }
 
 .footer-credits {
-    background-color: #2bc958;
+    background-color: #01bb36;
     clear: both;
 }
 .footer-credits-text {
     padding: 20px 0;
     color: #fff;
-    background-color: #2bc958;
+    background-color: #01bb36;
 }
 .site-header {
     padding: 15px 0;
